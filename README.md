@@ -15,6 +15,7 @@ Pleos 차량 화면과 동승자 휴대폰을 여행방으로 연결하는 협�
 | 실행·설치 안내 | [심사용 실행 안내](docs/RUN.md) |
 | 검증 결과와 지원 범위 | [검증 기록](docs/VALIDATION.md) |
 | release 빌드·서명 | [빌드 안내](docs/BUILD.md) |
+| APK 다운로드 페이지 | [공모전 시연 release](https://github.com/hacho1/CrewTrip/releases/tag/v0.1.0-contest.1) |
 
 APK는 Pleos 에뮬레이터에서 같은 PC의 `http://10.0.2.2:4310` 서버를 사용하는 **에뮬레이터 시연용 release**입니다. 디버깅을 해제하고 전용 인증서로 서명했으며, 패키지는 `app.crewtrip.vehicle.demo`입니다. PC에서 아래 서버를 실행해야 화면과 여행방을 사용할 수 있습니다.
 
@@ -60,6 +61,7 @@ npm start
 - Android 호스트는 Kotlin과 Pleos Vehicle/NaviHelper SDK를 사용합니다. React UI를 WebView에 표시하고, 주행 제한과 SDK 접근은 네이티브에서 검사합니다.
 - React·TypeScript·Leaflet으로 지도와 차량·모바일 UI를 만들고, Express·Socket.IO로 같은 여행방의 의견과 투표를 공유합니다.
 - 서버 테스트 13건, 기존 브라우저 회귀 24건과 새 지도 회귀 1건을 확인했습니다. 실제 OSM·ITS·CCTV 연결 체크 7개를 통과했습니다. 시험별 모의·실제 범위는 [검증 기록](docs/VALIDATION.md)에 있습니다.
+- 공개 release의 설치와 실제 Pleos P 상태에서 첫 화면 기동을 확인했습니다. 이후 방 생성과 D/P 전환 자동 검증의 미완료 범위도 검증 기록에 포함했습니다.
 
 ```powershell
 npm test

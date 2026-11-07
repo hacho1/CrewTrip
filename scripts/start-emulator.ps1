@@ -1,6 +1,7 @@
 param([switch]$Headless,[ValidateSet('auto','host','software','swiftshader')][string]$Gpu='auto',[ValidatePattern('^[A-Za-z0-9_.-]+$')][string]$AvdName='CrewTrip_Pleos_2_1')
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path $PSScriptRoot -Parent
+New-Item -ItemType Directory -Force -Path (Join-Path $projectRoot 'artifacts') | Out-Null
 $sdkRoot=Join-Path $env:LOCALAPPDATA 'Android\Sdk'
 $arguments=@('-avd',$AvdName,'-no-snapshot','-gpu',$Gpu,'-memory','4096','-no-audio')
 if($Headless){$arguments+='-no-window'}

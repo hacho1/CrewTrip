@@ -48,7 +48,34 @@
     "cleanNpmInstall": true
   },
   "nativeReleaseRuntime": {
-    "outcome": "pending",
-    "scope": "Read-only headless Pleos emulator cold boot"
+    "outcome": "partial",
+    "avd": "CrewTrip_Pleos_2_1\r",
+    "headless": true,
+    "readOnlyAvd": true,
+    "injectedVehicleState": false,
+    "apkSha256": "4e614143544aadb029c6603515955f5149cf49bf2f5f6f11175eed09ba03952b",
+    "installedSha256": "4e614143544aadb029c6603515955f5149cf49bf2f5f6f11175eed09ba03952b",
+    "checks": [
+      {
+        "name": "Signed release APK installs with the exact submission SHA-256",
+        "status": "PASS"
+      },
+      {
+        "name": "Release loads the local server UI with actual Pleos P state",
+        "status": "PASS"
+      }
+    ],
+    "automationError": "Native control bounds unavailable",
+    "tripCreationVerified": false,
+    "newReleaseDTransitionVerified": false,
+    "finishedAt": "2026-11-07T05:53:20.423Z",
+    "note": "Installed APK identity and actual Pleos P entry screen were verified. Native input automation could not continue."
+  },
+  "publicApkDownload": {
+    "anonymousDownload": true,
+    "status": 200,
+    "bytes": 9612169,
+    "sha256": "4e614143544aadb029c6603515955f5149cf49bf2f5f6f11175eed09ba03952b",
+    "matchesLocal": true
   }
 }

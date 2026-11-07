@@ -19,7 +19,7 @@ Windows, Node.js 24, JDK 17, Android SDK 35, Gradle 8.11.1, Pleos Connect Emulat
 ```powershell
 $adb = Join-Path $env:LOCALAPPDATA 'Android\Sdk\platform-tools\adb.exe'
 & $adb devices
-& $adb -e install -r .\apk\hacho1_CrewTrip_release.apk
+& $adb -e install --user current --no-streaming -r .\apk\hacho1_CrewTrip_release.apk
 & $adb -e shell am start -W -n app.crewtrip.vehicle.demo/app.crewtrip.vehicle.MainActivity
 ```
 
