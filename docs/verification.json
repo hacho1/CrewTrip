@@ -1,0 +1,54 @@
+{
+  "dateKst": "2026-11-07",
+  "publication": {
+    "visibility": "public",
+    "repository": "https://github.com/hacho1/CrewTrip",
+    "account": "hacho1"
+  },
+  "apk": {
+    "targetSdk": 34,
+    "path": "apk/hacho1_CrewTrip_release.apk",
+    "minSdk": 28,
+    "bytes": 9612169,
+    "serverOrigin": "http://10.0.2.2:4310",
+    "v3": true,
+    "buildType": "emulatorRelease",
+    "package": "app.crewtrip.vehicle.demo",
+    "debuggable": false,
+    "sha256": "4e614143544aadb029c6603515955f5149cf49bf2f5f6f11175eed09ba03952b",
+    "certificateSha256": "ba6a2f28abf4b935cd81a679368c531076b87996167479bee92ede0450053a1b",
+    "signatureVerified": true
+  },
+  "sourceValidation": {
+    "serverTests": {
+      "failed": 0,
+      "passed": 13
+    },
+    "previousBrowserRegression": {
+      "newMapTestPassedAfterExpectedTextCorrection": 1,
+      "existingPassed": 24,
+      "dateKst": "2026-11-06"
+    },
+    "liveExternalCheck": {
+      "width": 720,
+      "dateKst": "2026-11-06",
+      "sample": "동해선 구정휴게소",
+      "height": 480,
+      "incidents": 1,
+      "cameras": 44,
+      "passed": 7
+    },
+    "webBuild": true,
+    "androidUnitTests": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0
+    },
+    "webIndexSha256": "8a45138c6d1d923f1c9695b68195f5c9cd221bb819a860837d8b655f3cabb16c",
+    "cleanNpmInstall": true
+  },
+  "nativeReleaseRuntime": {
+    "outcome": "pending",
+    "scope": "Read-only headless Pleos emulator cold boot"
+  }
+}

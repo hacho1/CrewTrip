@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'tests',timeout:60_000,workers:1,reporter:[['list'],['json',{outputFile:'artifacts/e2e-results.json'}]],use:{baseURL:'http://127.0.0.1:4310',browserName:'chromium',channel:'msedge',viewport:{width:1440,height:900},trace:'retain-on-failure'},webServer:{command:'npm start',url:'http://127.0.0.1:4310/api/health',reuseExistingServer:true}});

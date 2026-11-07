@@ -1,0 +1,13 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:1
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:1.000000,
+road-test-00.mpegts
+#EXTINF:1.000000,
+road-test-01.mpegts
+#EXTINF:1.000000,
+road-test-02.mpegts
+#EXTINF:1.000000,
+road-test-03.mpegts
+#EXT-X-ENDLIST
